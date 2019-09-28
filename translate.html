@@ -1,0 +1,30 @@
+<html>
+    <head>
+          <title>TRANSLATE</title>
+              <!--Including CSS and jquery library-->
+              <link rel="stylesheet"
+                    href="bootstrap.css"/>
+              <script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    </head>
+
+    <body>
+      <a href="index.html">HOME</a> &nbsp;
+      <a href="contact.html">CONTACT</a> &nbsp;
+      <a href="translate.html">TRANSLATE</a> &nbsp;
+
+    <h1 id="title" onclick="translateGerman();">Thank You</h1>
+
+
+    </body>
+    <script type="text/javascript">
+        function translateGerman(){
+           $("#title").html("Dankeschön");
+           $("#title").click(function(){
+              $("#title").html("Thank You");
+              $("#title").off("click");
+           });
+        };
+        
+    </script>
+</html>

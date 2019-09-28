@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+      <head>
+          <meta charset="utf-8">
+            <title>CONTACT FORM</title>
+              <!--Including CSS-->
+              <link rel=stylesheet
+                    type=text/css
+                    href=bootstrap.css />
+              <link rel="stylesheet"
+                    href="style.css" />
+      </head>
+
+      <body>
+          <a href="index.html">HOME</a> &nbsp;
+          <a href="contact.html">CONTACT</a> &nbsp;
+          <a href="translate.html">TRANSLATE</a>
+
+      <div class="container">
+        <!-- without "container" div the form is on the top left-->
+          <form id="contact" action="" method="post">
+            <!-- Styling for contact ID is found in style css-->
+            <div>
+              <fieldset>
+                <input placeholder="Full Name"type="text" tabindex="1">
+              </fieldset>
+              <fieldset>
+                <input placeholder="Email"type="email">
+              </fieldset>
+              <fieldset>
+                <input placeholder="Phone Number"type="tel" >
+              </fieldset>
+              <fieldset>
+                <textarea placeholder="Type your Message Here...." rows="8" cols="80"></textarea>
+              </fieldset>
+              <fieldset>
+                <button type="submit" name="submit" data-submit="Sending">Submit</button >
+              </fieldset>
+              <!--Adding individual fieldsets for column;
+              in a single fieldset would be horizontal-->
+
+
+            </div>
+
+          </form>
+</div>
+      </body>
+</html>
