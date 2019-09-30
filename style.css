@@ -1,5 +1,46 @@
 #contact{
   background: #f9f9f9;
   padding: 25px; /* Pads 25px all around for the contents of the box */
-  margin: 50px 0; /* Moves the box itself */
+  margin: 50px 0; /* First num vertical orientation; second num horizontal orientation */
+}
+
+#contact button[type="submit"]{
+    width: 100%; /* Makes button fit to size of container */
+    background: #0cf; /*Turns button blue*/
+    color: #fff; /*Button text is white*/
+    padding:10px; /* vertical and horizontal padding*/
+    fint-size:15px;
+}
+
+#contact button[type="submit"]:hover{
+    background: #09c;
+}
+
+#contact textarea{
+    height:150px; /*Sizes vertical area for Message*/
+    width: 350px;
+    max-width: 100%; /*Horizontal area*/
+
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact textarea{
+    boder:1px solid #ccc;
+    background: #fff;
+    padding: 10px; /* Padding around text placeholder*/
+    margin: 0 0 5px; /* vertical space between fieldsets */
+    width: 100%; /*inputs fill the space to match the textarea*/
+}
+
+.container{
+  max-width: 400px; /*size and position of internal container*/
+  width: 100%;
+
+}
+
+fieldset{
+   margin: 0 0 10px; /* vertical space between fieldsets */
+   min-width: 100%;
 }
